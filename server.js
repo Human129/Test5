@@ -16,6 +16,10 @@ app.get('/image', (req, res) => {
     res.sendFile(imagePath);
 });
 
+app.get('/', (req, res) => {
+res.send("Ello");
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
